@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_700"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudoku"
+            android:textColor="@color/white"
+            android:textSize="35sp"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/grid_9x9"
+        android:layout_gravity="center"
+        android:numColumns="9"/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Check"/>
+
+</LinearLayout>
